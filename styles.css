@@ -1,0 +1,292 @@
+/*Regular*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/808fbb61cedded38d08971f5ae9d5f83.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+/*Bold*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/464da424cd85ce6187aec9d2ea98eb33.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+/*Bold Italic*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/bc94db023daf995f9729e0fbf2d33c0b.ttf);
+  font-weight: bold;
+  font-style: italic; }
+
+/*Italic*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/a8ff3a20c149ff8d9295b66c5d17636e.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+/*Light*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/716a1f5ada34cf1bd35282c6831127f6.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+/*Light Italic*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/09feeaf71bef5e147cc3f3fe242ed75c.ttf);
+  font-weight: 300;
+  font-style: italic; }
+
+/*Medium*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/1078f13b74ff9122be76db3ddaf8870c.ttf);
+  font-weight: 500;
+  font-style: normal; }
+
+/*Medium Italic*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url(fonts/cf1aee5e6f0b5ee5cc80ec5adcea72e8.ttf);
+  font-weight: 500;
+  font-style: italic; }
+
+/*Font Awesome*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(fonts/706450d7bba6374ca02fe167d86685cb.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4f4f4f;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.form__field {
+  border: 1px solid #c4c4c4;
+  padding: 0 15px;
+  color: #c4c4c4;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  outline: none; }
+
+.modal {
+  width: 380px;
+  position: absolute;
+  max-width: 380px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-width: 0 1px 1px 1px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff; }
+  .modal__arrow, .modal__arrow::after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid; }
+  .modal__arrow {
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-color: rgba(0, 0, 0, 0.25);
+    border-width: 11px;
+    border-bottom-width: 0; }
+  .modal__arrow::after {
+    bottom: 1px;
+    margin-left: -10px;
+    border-top-color: #fff;
+    border-width: 10px;
+    border-bottom-width: 0;
+    content: ""; }
+  .modal__header {
+    height: 45px;
+    background-color: #ff8663;
+    border-radius: 10px 10px 0 0;
+    position: relative; }
+  .modal__icon {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    cursor: pointer; }
+  .modal__header-icon-close {
+    right: 15px; }
+  .modal__header-icon-map-marker {
+    left: 15px; }
+  .modal__header-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FiraSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0 35px; }
+  .modal__main {
+    background-color: #fff;
+    padding: 0 15px; }
+  .modal__footer {
+    background-color: #fff;
+    height: 45px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 15px; }
+  .modal__btn {
+    background-color: #ff8663;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    cursor: pointer; }
+
+::-webkit-scrollbar {
+  width: 3px; }
+
+::-webkit-scrollbar-button {
+  background-color: transparent; }
+
+::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff; }
+
+::-webkit-scrollbar-thumb {
+  height: 80px;
+  background-color: #c4c4c4;
+  border-radius: 3px; }
+
+::-webkit-scrollbar-corner {
+  background-color: transparent; }
+
+::-webkit-resizer {
+  background-color: transparent; }
+
+.comment__list {
+  padding: 0;
+  margin: 15px 0;
+  max-height: 140px;
+  border-bottom: 1px solid #f0f0f0;
+  overflow: scroll; }
+
+.comment__form-field-input {
+  line-height: 34px;
+  border-radius: 17px; }
+
+.comment__form-field-textarea {
+  border-radius: 17px;
+  resize: none;
+  height: 130px;
+  padding: 10px 15px; }
+
+.comment__form-title {
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff8663;
+  margin-bottom: 15px;
+  text-transform: uppercase; }
+
+.comment__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 20px; }
+
+.comment__name {
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-right: 10px; }
+
+.comment__place {
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(79, 79, 79, 0.75);
+  margin-right: 10px; }
+
+.comment__date {
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(79, 79, 79, 0.75); }
+
+.comment__text {
+  font-family: "FiraSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4f4f4f;
+  flex-basis: 100%; }
+
+.cluster {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px; }
+  .cluster__place {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .cluster__address {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px; }
+  .cluster__text {
+    margin-bottom: 10px; }
+  .cluster__date {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 5px; }
+
+/*# sourceMappingURL=styles.css.map*/
